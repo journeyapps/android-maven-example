@@ -1,5 +1,6 @@
 language: java
-before_script:
+before_install:
   - ./setup_sdk
+before_script:
   - ./start_emulator
 script: mvn install -Pintegration-tests -Dandroid.device=test
