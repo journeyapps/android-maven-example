@@ -106,6 +106,8 @@
                         <versionCodeUpdateFromVersion>true</versionCodeUpdateFromVersion>
                     </manifest>
                     <mergeManifests>true</mergeManifests>
+
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
                 </configuration>
                 <executions>
                     <execution>
@@ -117,8 +119,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-
         </plugins>
     </build>
 </project>
