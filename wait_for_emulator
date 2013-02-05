@@ -1,5 +1,4 @@
 #!/bin/bash
-emulator -avd test -no-skin -no-audio -no-window &
 
 bootanim=""
 failcounter=0
@@ -13,6 +12,6 @@ until [[ "$bootanim" =~ "stopped" ]]; do
         exit 1
       fi
    fi
-   sleep 1
+   sleep 3
 done
 echo "Done"
