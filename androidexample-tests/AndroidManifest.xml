@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.embarkmobile.androidexample.tests">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+
+
+    <application android:label="Android Maven Tests">
+        <!-- Test acitivity -->
+        <activity android:name=".TestActivity"/>
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:label="Android Maven Tests" android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.embarkmobile.androidexample.tests">
+    </instrumentation>
+</manifest>
