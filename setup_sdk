@@ -11,4 +11,4 @@ export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 # Other relevant API's:
 #  addon-google_apis-google-16
 #
-android update sdk --filter android-16,sysimg-16,extra-android-support --no-ui --force
+android update sdk --filter platform-tools,android-16,sysimg-16,extra-android-support --no-ui --force
