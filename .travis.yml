@@ -1,6 +1,8 @@
 language: java
 before_install:
   - ./setup_sdk
+  - export ANDROID_HOME=$PWD/android-sdk-linux
+  - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 before_script:
   - ./start_emulator
 script: mvn install -Pintegration-tests -Dandroid.device=test
