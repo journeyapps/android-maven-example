@@ -1,6 +1,8 @@
 # Android Example Maven Project
 
-## Running tests
+[![Build Status](https://travis-ci.org/embarkmobile/android-maven-example.png?branch=master)](https://travis-ci.org/embarkmobile/android-maven-example)
+
+## Running tests locally
 
 To run on a device connected via USB:
 
