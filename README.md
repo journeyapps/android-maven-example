@@ -11,3 +11,8 @@ To run on a device connected via USB:
     mvn install -Pintegration-tests -Dandroid.device=usb
 
 To run on an emulator, start up an emulator, and set `android.device` to the name of that emulator.
+
+## License
+
+All files in this project are under the MIT license, see LICENSE for details.
+
