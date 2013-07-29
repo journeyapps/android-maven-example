@@ -11,8 +11,8 @@ before_install:
   # Install base Android SDK
   - sudo apt-get update -qq
   - if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq libc6:i386 libgcc1:i386 gcc-4.6-base:i386 libstdc++5:i386 libstdc++6:i386 lib32z1 libreadline6-dev:i386 libncurses5-dev:i386; fi
-  - wget http://dl.google.com/android/android-sdk_r22-linux.tgz
-  - tar xzf android-sdk_r22-linux.tgz
+  - wget -O android-sdk.tgz http://dl.google.com/android/android-sdk_r22.0.4-linux.tgz
+  - tar xzf android-sdk.tgz
   - export ANDROID_HOME=$PWD/android-sdk-linux
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
@@ -22,7 +22,7 @@ before_install:
   # Note that `echo y` only accepts the first license. This is actually convenient, since
   # it prevents the installation of the ATOM and MIPS emulator images. It might cause
   # issues in the future though.
-  - echo y | android update sdk --filter platform-tools,build-tools-17.0.0,android-16,extra-android-support,$ANDROID_SDKS --no-ui --force > /dev/null
+  - echo y | android update sdk --filter platform-tools,build-tools-18.0.0,android-16,extra-android-support,$ANDROID_SDKS --no-ui --force > /dev/null
 
   # Create and start emulator
   - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
