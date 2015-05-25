@@ -1,8 +1,8 @@
 # Android Example Maven Project
 
-This project has tests running on Travis CI. See [this blog post](http://rkistner.github.com/android/2013/02/05/android-builds-on-travis-ci/) for an in-depth description.
-
 [![Build Status](https://travis-ci.org/embarkmobile/android-maven-example.png?branch=master)](https://travis-ci.org/embarkmobile/android-maven-example)
+
+This project has tests running on Travis CI. See [this blog post](http://rkistner.github.com/android/2013/02/05/android-builds-on-travis-ci/) for an in-depth description.
 
 **Note:** This example may be outdated, and could probably be simplified.
 Check out the [official samples](https://code.google.com/p/maven-android-plugin/wiki/Samples) for more up-to-date examples.
